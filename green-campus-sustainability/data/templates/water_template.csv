@@ -1,0 +1,6 @@
+measurement_date,building_id,consumption_litres,occupancy_count,notes
+2024-01-01,1,12500.0,350,
+2024-01-02,1,12800.0,360,
+2024-01-03,1,12200.0,345,
+2024-01-06,1,13100.0,365,
+2024-01-07,1,4200.0,80,Sunday

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Campus Sustainability Audit Report — Green Valley University (Demo)</title>
+<style>
+  body {font-family:system-ui,sans-serif;max-width:900px;margin:0 auto;padding:20px;color:#1a202c;background:#f7fafc;}
+  h1 {color:#1a365d;border-bottom:3px solid #38a169;padding-bottom:10px;}
+  .meta {color:#718096;font-size:0.9em;margin-bottom:30px;}
+</style>
+</head>
+<body>
+<h1>🌿 Campus Sustainability Audit Report</h1>
+<div class="meta">
+  <strong>Campus:</strong> Green Valley University (Demo) &nbsp;|&nbsp;
+  <strong>Run ID:</strong> RUN-AC4B32EC60CA &nbsp;|&nbsp;
+  <strong>Report ID:</strong> RPT-8D4E0CC4 &nbsp;|&nbsp;
+  <strong>Generated:</strong> 2026-10-18 13:16 UTC
+</div>
+
+            <div style="background:#ff6b35;color:white;padding:12px 20px;font-weight:bold;font-size:1.1em;border-radius:6px;margin-bottom:20px;">
+                ⚠️ SYNTHETIC DEMONSTRATION DATA — This report contains artificially generated data.
+                Do NOT use these figures for real environmental or regulatory reporting.
+            </div>
+
+            <div style="margin-bottom:30px;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;">
+                <div style="background:#1a365d;color:white;padding:12px 20px;">
+                    <h2 style="margin:0;font-size:1.2em;">Executive Summary</h2>
+                </div>
+                <div style="padding:16px 20px;">
+                    
+                    <pre style="white-space:pre-wrap;font-family:inherit;font-size:0.9em;margin:0;">Campus: Green Valley University (Demo)
+Audit period: N/A to N/A
+Data quality score: 100.0/100
+Total findings: 2
+Total recommended actions: 4
+Total electricity: 267,174.4 kWh
+Estimated CO₂e (Scope 2, electricity only): 191.30 tCO₂e [ESTIMATE — source: CEA CO2 Baseline Database Version 18 (2022-23)]
+Total water: 6,848,439 litres
+Total waste: 27,430.4 kg</pre>
+                </div>
+            </div>
+            <div style="margin-bottom:30px;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;">
+                <div style="background:#1a365d;color:white;padding:12px 20px;">
+                    <h2 style="margin:0;font-size:1.2em;">Data Quality Assessment</h2>
+                </div>
+                <div style="padding:16px 20px;">
+                    <p style="color:#ff6b35;font-weight:bold;">⚠️ Contains synthetic data</p>
+                    <pre style="white-space:pre-wrap;font-family:inherit;font-size:0.9em;margin:0;">Quality Score: 100.0/100
+Formula: 100 × (1 − weighted_issue_rate)
+Issues found: 0
+  ⚠️  ⚠️  885 electricity records are SYNTHETIC DEMO DATA. Do not use for real environmental reporting.
+  ⚠️  ⚠️  900 water records are SYNTHETIC DEMO DATA. Do not use for real environmental reporting.
+  ⚠️  ⚠️  130 waste records are SYNTHETIC DEMO DATA. Do not use for real environmental reporting.</pre>
+                </div>
+            </div>
+            <div style="margin-bottom:30px;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;">
+                <div style="background:#1a365d;color:white;padding:12px 20px;">
+                    <h2 style="margin:0;font-size:1.2em;">Audit Findings</h2>
+                </div>
+                <div style="padding:16px 20px;">
+                    
+                    <pre style="white-space:pre-wrap;font-family:inherit;font-size:0.9em;margin:0;">[HIGH] Electricity consumption 278.7% above baseline (Confidence: Confidence.HIGH)
+  Current period total (267174.4 kWh) is 278.7% higher than the baseline period (70554.9 kWh). Threshold: 25.0% above baseline.
+  Evidence (calculation) [SYNTHETIC]: Baseline comparison: 70554.9 kWh → 267174.4 kWh
+[MEDIUM] 9 anomalous electricity consumption days detected (Confidence: Confidence.MEDIUM)
+  Method: Isolation Forest (scikit-learn). Identifies anomalies through random partitioning.. Detected 9 anomalous days out of 177 total. Limitations: No ground truth labels. Contamination parameter is configurable. Results indicate candidates for review, not confirmed errors..
+  Evidence (ml_model) [SYNTHETIC]: Anomaly detection (isolation_forest): 9 outlier days. Dates: ['2024-03-01', '2024-03-02', '2024-03-04', '2024-03-07', '2024-03-09']</pre>
+                </div>
+            </div>
+            <div style="margin-bottom:30px;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;">
+                <div style="background:#1a365d;color:white;padding:12px 20px;">
+                    <h2 style="margin:0;font-size:1.2em;">Investigation Results</h2>
+                </div>
+                <div style="padding:16px 20px;">
+                    
+                    <pre style="white-space:pre-wrap;font-family:inherit;font-size:0.9em;margin:0;">Finding ELEC-SPIKE-45A62AA7:
+  Investigation of finding 'Electricity consumption 278.7% above baseline' found 2 supporting and 0 contradictory evidence items. Alternative explanations identified: 3.
+  Alternative explanation: The spike may be related to occupancy or academic calendar events rather than equipment malfunction or waste.
+  Alternative explanation: The elevated consumption may be a short-term spike rather than a persistent trend.
+  Alternative explanation: Data gaps exist in the measurement record (1 gap(s)). Some apparent anomalies may be artifacts of missing data, not real consumption changes.
+  Additional data needed: Obtain occupancy/attendance records to separate occupancy effects from efficiency changes.
+  Additional data needed: Sub-meter readings per building to identify the highest-consuming facility.
+  Additional data needed: Equipment inventory to identify recently added high-power equipment.
+  Additional data needed: Calendar of events (exams, events, holidays) for the anomalous periods.
+  Additional data needed: Fill missing measurement periods before drawing firm conclusions.
+Finding ELEC-ANOM-72550546:
+  Investigation of finding '9 anomalous electricity consumption days detected' found 2 supporting and 0 contradictory evidence items. Alternative explanations identified: 3.
+  Alternative explanation: The spike may be related to occupancy or academic calendar events rather than equipment malfunction or waste.
+  Alternative explanation: The elevated consumption may be a short-term spike rather than a persistent trend.
+  Alternative explanation: Data gaps exist in the measurement record (1 gap(s)). Some apparent anomalies may be artifacts of missing data, not real consumption changes.
+  Additional data needed: Obtain occupancy/attendance records to separate occupancy effects from efficiency changes.
+  Additional data needed: Sub-meter readings per building to identify the highest-consuming facility.
+  Additional data needed: Equipment inventory to identify recently added high-power equipment.
+  Additional data needed: Calendar of events (exams, events, holidays) for the anomalous periods.
+  Additional data needed: Fill missing measurement periods before drawing firm conclusions.</pre>
+                </div>
+            </div>
+            <div style="margin-bottom:30px;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;">
+                <div style="background:#1a365d;color:white;padding:12px 20px;">
+                    <h2 style="margin:0;font-size:1.2em;">Prioritized Actions (Top 10)</h2>
+                </div>
+                <div style="padding:16px 20px;">
+                    
+                    <pre style="white-space:pre-wrap;font-family:inherit;font-size:0.9em;margin:0;">Rank #1 | Score: 88.0/100 | Action: ACT-266D7612
+  Score breakdown: impact_weighted=32.0, urgency_weighted=25.0, confidence_weighted=16.0, feasibility_weighted=15.0
+Rank #2 | Score: 88.0/100 | Action: ACT-1D95A019
+  Score breakdown: impact_weighted=32.0, urgency_weighted=25.0, confidence_weighted=16.0, feasibility_weighted=15.0
+Rank #3 | Score: 81.8/100 | Action: ACT-EEA832C3
+  Score breakdown: impact_weighted=32.0, urgency_weighted=18.8, confidence_weighted=16.0, feasibility_weighted=15.0
+Rank #4 | Score: 77.2/100 | Action: ACT-4CEDD847
+  Score breakdown: impact_weighted=32.0, urgency_weighted=18.8, confidence_weighted=16.0, feasibility_weighted=10.5</pre>
+                </div>
+            </div>
+            <div style="margin-bottom:30px;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;">
+                <div style="background:#1a365d;color:white;padding:12px 20px;">
+                    <h2 style="margin:0;font-size:1.2em;">Methodology and Limitations</h2>
+                </div>
+                <div style="padding:16px 20px;">
+                    
+                    <pre style="white-space:pre-wrap;font-family:inherit;font-size:0.9em;margin:0;">All findings are generated by deterministic rule-based agents without paid AI APIs.
+Anomaly detection: Isolation Forest (≥30 samples) or Z-score (&lt; 30 samples).
+Emission factor: 0.716 kgCO₂e/kWh (source: CEA CO2 Baseline Database Version 18 (2022-23)).
+Scope 2 electricity emissions estimate only. Not a certified GHG inventory. Consult a qualified practitioner for official reporting.
+Priority scores use configurable weights (impact/urgency/confidence/feasibility).
+Verification requires measured pre/post data — user attestation alone is insufficient.
+All expected action impacts are ESTIMATES, not guaranteed savings.
+</pre>
+                </div>
+            </div>
+<footer style="margin-top:40px;padding-top:20px;border-top:1px solid #e2e8f0;color:#718096;font-size:0.85em;">
+  Generated by Green Campus Sustainability Auditor v1.0.0 |
+  All findings are based on available data and configured thresholds. |
+  Consult qualified professionals before making financial or regulatory decisions.
+</footer>
+</body>
+</html>

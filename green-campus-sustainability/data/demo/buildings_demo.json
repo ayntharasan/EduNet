@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Main Academic Block",
+    "type": "academic",
+    "area_m2": 8000,
+    "capacity": 600
+  },
+  {
+    "id": 2,
+    "name": "Science Laboratory",
+    "type": "laboratory",
+    "area_m2": 3000,
+    "capacity": 200
+  },
+  {
+    "id": 3,
+    "name": "Student Hostel A",
+    "type": "residential",
+    "area_m2": 4500,
+    "capacity": 300
+  },
+  {
+    "id": 4,
+    "name": "Administrative Block",
+    "type": "office",
+    "area_m2": 2000,
+    "capacity": 100
+  },
+  {
+    "id": 5,
+    "name": "Sports Complex",
+    "type": "sports",
+    "area_m2": 6000,
+    "capacity": 400
+  }
+]

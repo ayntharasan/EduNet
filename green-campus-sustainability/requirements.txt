@@ -1,0 +1,35 @@
+# Core backend
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+pydantic==2.10.3
+pydantic-settings==2.6.1
+sqlalchemy==2.0.36
+alembic==1.14.0
+
+# Data processing
+pandas==2.2.3
+numpy==2.2.0
+openpyxl==3.1.5
+
+# Machine learning
+scikit-learn==1.5.2
+joblib==1.4.2
+
+# Reporting
+jinja2==3.1.4
+# weasyprint==62.3  # Optional: PDF reports. Requires GTK system libs. HTML reports work without it.
+
+# HTTP client (for optional Ollama)
+httpx==0.28.1
+
+# Utilities
+python-multipart==0.0.19
+aiofiles==24.1.0
+python-dotenv==1.0.1
+rich==13.9.4
+click==8.1.8
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.24.0
+httpx==0.28.1

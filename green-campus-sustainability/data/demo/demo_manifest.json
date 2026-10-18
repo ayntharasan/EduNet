@@ -1,0 +1,71 @@
+{
+  "description": "Synthetic demo campus dataset for Green Campus Sustainability Auditor",
+  "generated_at": "2026-10-18",
+  "seed": 42,
+  "campus_name": "Green Valley University (SYNTHETIC DEMO)",
+  "is_synthetic": true,
+  "warning": "ALL DATA IS ARTIFICIALLY GENERATED. Do not use for real environmental reporting, regulatory compliance, or research.",
+  "buildings": 5,
+  "days": 180,
+  "start_date": "2024-01-01",
+  "end_date": "2024-06-28",
+  "electricity_records": 885,
+  "water_records": 900,
+  "waste_records": 130,
+  "injected_anomalies": [
+    {
+      "type": "electricity_spike",
+      "building_id": 1,
+      "building_name": "Main Academic Block",
+      "day_start": 60,
+      "day_end": 75,
+      "date_start": "2024-03-01",
+      "date_end": "2024-03-16",
+      "factor": 2.1,
+      "description": "Simulated HVAC fault causing 110% above-normal consumption"
+    },
+    {
+      "type": "water_elevated",
+      "building_id": 3,
+      "building_name": "Student Hostel A",
+      "day_start": 30,
+      "day_end": 50,
+      "date_start": "2024-01-31",
+      "date_end": "2024-02-20",
+      "factor": 1.7,
+      "description": "Simulated water leak candidate (persistently elevated, not confirmed leak)"
+    }
+  ],
+  "missing_periods": [
+    {
+      "category": "electricity",
+      "building_ids": "all",
+      "days": [
+        45,
+        46,
+        47
+      ],
+      "dates": [
+        "2024-02-15",
+        "2024-02-16",
+        "2024-02-17"
+      ],
+      "description": "Simulated meter downtime"
+    }
+  ],
+  "intervention": {
+    "day": 90,
+    "date": "2024-03-31",
+    "building_id": 1,
+    "building_name": "Main Academic Block",
+    "description": "Simulated corrective action: HVAC schedule optimization",
+    "post_intervention_factor": 0.82,
+    "note": "Post-intervention consumption is ~18% lower than pre-anomaly baseline."
+  },
+  "files": {
+    "electricity": "C:\\Users\\Dell\\Downloads\\EduNet\\green-campus-sustainability\\data\\demo\\electricity_demo.csv",
+    "water": "C:\\Users\\Dell\\Downloads\\EduNet\\green-campus-sustainability\\data\\demo\\water_demo.csv",
+    "waste": "C:\\Users\\Dell\\Downloads\\EduNet\\green-campus-sustainability\\data\\demo\\waste_demo.csv",
+    "buildings": "C:\\Users\\Dell\\Downloads\\EduNet\\green-campus-sustainability\\data\\demo\\buildings_demo.json"
+  }
+}
